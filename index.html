@@ -1,0 +1,315 @@
+<!DOCTYPE html> <!-- to prevent a browser from switching into quirks mode when rendering a document -->
+<html lang="en"> <!-- to declare English as the default language -->
+  
+  <!-- Head -->
+  <head>
+    <meta charset="utf-8" /> <!-- to set character encoding as utf-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- to allow IE to use Classic Mode instead of Compatibility mode so as to prevent the layout from being off -->
+    <meta name="viewport" content="width=device-width,initial-scale=1" /> <!-- to ensure the responsive design -->
+    <meta name="author" content="Yuriko Uchida" /> <!-- author's name -->
+    <meta name="description" content="online pizza order form"> <!-- brief description of this website -->
+    <title>Assignment 2 | Yuriko Uchida</title> <!-- page title -->
+    <link rel="stylesheet" href="style.css"> <!-- to link a CSS file "assignment2.css" to this HTML file -->
+    <link rel="shortcut icon" href="favicon.png" type="image/png" /> <!-- to add a favicon -->
+    <!-- the source of the above icon: https://www.flaticon.com/free-icons/pizza -->
+  </head>
+
+  <!-- Body -->
+  <body>
+
+    <!-- Header -->
+    <header>
+        <h1>Online Order</h1>
+        <h2>Ready to order?</h2>
+        <img src="freshy-pizza.jpg" width="264" height="396" alt="freshy pizza">
+    </header>
+
+    <!-- Main -->
+    <main>
+      <article> <!-- order form-->
+        <form action="process.php" method="get">
+
+          <div class="formTitle">
+            <h2 class="orange">Order From</h2>
+            <p><i>(<span>*</span> required information)</i></p>
+          </div>
+          <fieldset> <!-- order form for pizza information-->
+            <legend>Order Items</legend>
+            <label for="pizza1" class="marginLeft0"><span>*</span>Pizza: </label> <!-- the first pizza -->
+              <select name="pizza1" id="pizza1" size="1" required>
+                <option value="" selected>-----</option>
+                <optgroup label="Tomato Sauce">
+                  <option value="margherita">Margherita</option>
+                  <option value="marinara">Marinara</option>
+                  <option value="napoletana">Napoletana</option>
+                  <option value="proRucola">Prosciutto e Rucola</option>
+                  <option value="proFunghi">Prosciutto e Funghi</option>
+                  <option value="capricciosa">Capricciosa</option>
+                </optgroup>
+                <optgroup label="Olive Oil Base">
+                  <option value="quattro">Quattro Formaggi </option>
+                  <option value="tricolore">Tricolore</option>
+                </optgroup>
+                <optgroup label="Cream Sauce">
+                  <option value="pancetta">Pancetta e Zucchine</option>
+                  <option value="gatto">Pizza Gattò</option>
+                </optgroup>
+              </select>
+
+              <label for="pizza1Size"><span>*</span>Size: </label> <!-- the first pizza -->
+              <select name="pizza1Size" id="pizza1Size" size="1" required>
+                <option value="" selected>-----</option>
+                <optgroup label="Whole Size">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </optgroup>
+                <optgroup label="Cut Slice">
+                  <option>Cut Slice</option>
+                </optgroup>
+              </select>
+
+              <label for="pizza1Num"><span>*</span>How many: </label> <!-- the number of the first pizza -->
+              <select name="pizza1Num" id="pizza1Num" size="1" required>
+                <option value="" selected>-----</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>                  
+              </select>
+
+              <label>Extra cheese ($5.00)<input type="checkbox" name="pizza1Cheese"></label>  
+              <label>Extra chili oil ($2.00)<input type="checkbox" name="pizza1Chili"></label>
+              <label>Gluten free ($5.00)<input type="checkbox" name="pizza1Gluten"></label>
+
+              <p></p> <!-- to start a new line -->
+              
+              <label for="pizza2" class="marginLeft0">Pizza: </label> <!-- the second pizza --> 
+              <select name="pizza2" id="pizza2" size="1">
+                <option value="" selected>-----</option>
+                <optgroup label="Tomato Sauce">
+                  <option value="margherita">Margherita</option>
+                  <option value="marinara">Marinara</option>
+                  <option value="napoletana">Napoletana</option>
+                  <option value="proRucola">Prosciutto e Rucola</option>
+                  <option value="proFunghi">Prosciutto e Funghi</option>
+                  <option value="capricciosa">Capricciosa</option>
+                </optgroup>
+                <optgroup label="Olive Oil Base">
+                  <option value="quattro">Quattro Formaggi </option>
+                  <option value="tricolore">Tricolore</option>
+                </optgroup>
+                <optgroup label="Cream Sauce">
+                  <option value="pancetta">Pancetta e Zucchine</option>
+                  <option value="gatto">Pizza Gattò</option>
+                </optgroup>
+              </select>
+
+              <label for="pizza2Size">Size: </label> <!-- the first pizza -->
+              <select name="pizza2Size" id="pizza2Size" size="1" required>
+                <option value="" selected>-----</option>
+                <optgroup label="Whole Size">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </optgroup>
+                <optgroup label="Cut Slice">
+                  <option>Cut Slice</option>
+                </optgroup>
+              </select>
+
+              <label for="pizza2Num">How many: </label> <!-- the number of the second pizza -->
+              <select name="pizza2Num" id="pizza2Num" size="1">
+                <option value="" selected>-----</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+
+              <label>Extra cheese ($5.00)<input type="checkbox" name="pizza2Cheese"></label>  
+              <label>Extra chili oil ($2.00)<input type="checkbox" name="pizza2Chili"></label>
+              <label>Gluten free ($5.00)<input type="checkbox" name="pizza2Gluten"></label>
+
+              <p></p> <!-- to start a new line -->
+
+              <label for="pizza3" class="marginLeft0">Pizza: </label> <!-- the third pizza --> 
+              <select name="pizza3" id="pizza3" size="1">
+                <option value="" selected>-----</option>
+                <optgroup label="Tomato Sauce">
+                  <option value="margherita">Margherita</option>
+                  <option value="marinara">Marinara</option>
+                  <option value="napoletana">Napoletana</option>
+                  <option value="proRucola">Prosciutto e Rucola</option>
+                  <option value="proFunghi">Prosciutto e Funghi</option>
+                  <option value="capricciosa">Capricciosa</option>
+                </optgroup>
+                <optgroup label="Olive Oil Base">
+                  <option value="quattro">Quattro Formaggi </option>
+                  <option value="tricolore">Tricolore</option>
+                </optgroup>
+                <optgroup label="Cream Sauce">
+                  <option value="pancetta">Pancetta e Zucchine</option>
+                  <option value="gatto">Pizza Gattò</option>
+                </optgroup>
+              </select>
+
+              <label for="pizza3Size">Size: </label> <!-- the size of the third pizza -->
+              <select name="pizza3Size" id="pizza3Size" size="1" required>
+                <option value="" selected>-----</option>
+                <optgroup label="Whole Size">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </optgroup>
+                <optgroup label="Cut Slice">
+                  <option>Cut Slice</option>
+                </optgroup>
+              </select>
+
+              <label for="pizza3Num">How many: </label> <!-- the number of the third pizza -->
+              <select name="pizza3Num" id="pizza3Num" size="1">
+                <option value="" selected>-----</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+
+              <label>Extra cheese ($5.00)<input type="checkbox" name="pizza3Cheese"></label>  
+              <label>Extra chili oil ($2.00)<input type="checkbox" name="pizza3Chili"></label>
+              <label>Gluten free ($5.00)<input type="checkbox" name="pizza3Gluten"></label>
+
+              <p></p> <!-- to start a new line -->
+
+          </fieldset>
+
+          <fieldset class="marginWide">
+            <legend>Personal Information</legend> <!-- order form for personal information -->
+            <label class="marginLeft0"><span>*</span>First name: <input type="text" name="fName" placeholder="3 to 15 characters" required minlength="3" maxlength="15"></label>  
+            <label><span>*</span>Last name: <input type="text" name="lName" placeholder="3 to 15 characters" required minlength="3" maxlength="15"></label>  
+            <label><span>*</span>Phone number: <input type="tel" name="phone" required></label>  
+            <label>e-Mail address: <input type="email" name="email"></label>  
+            <p></p> <!-- to start a new line -->
+            <label for="address-type" class="marginLeft0"><span>*</span>Address type: </label>  
+              <select name="addType" id="address-type" size="1" required>
+                <option value="" selected>-----</option>
+                <option value="house">House</option>
+                <option value="apt">Apartment</option>
+                <option value="biz">Business</option>
+                <option value="hotel">Hotel</option>
+                <option value="campus">Campus</option>
+              </select>
+
+            <label><span>*</span>Street address: <input type="text" name="add" required></label>  
+            <label>Suite/Apt number: <input type="text" name="aptNum"></label>  
+            <label><span>*</span>City: <input type="text" name="city" required></label>  
+
+            <p></p> <!-- to start a new line -->
+
+            <label for="province" class="marginLeft0"><span>*</span>Province: </label>  
+              <select name="province" id="province" size="1" required>
+                <option value="" selected>-----</option>
+                <option>ON</option>
+                <option>QC</option>
+                <option>NS</option>
+                <option>NB</option>
+                <option>MB</option>
+                <option>BC</option>
+                <option>PE</option>
+                <option>SK</option>
+                <option>AB</option>
+                <option>NL</option>
+              </select>
+
+            <label><span>*</span>Postal Code: <input type="text" name="postal" size="6" placeholder="6 digits" required></label>  
+          </fieldset>
+
+          <fieldset class="marginWide">
+            <legend>Payment and Order Method</legend> <!-- Payment and Order Information -->
+
+            <label for="pickDeli" class="marginLeft0"><span>*</span>Pick-up or Delivery: </label>  
+            <select name="pickDeli" id="pickDeli" size="1" required>
+              <option value="" selected>-----</option>
+              <option value="pick">Pick-up</option>
+              <option value="deli">Delivery</option>
+            </select>
+
+            <label><span>*</span>Date: <input type="date" name="date"></label>  
+              <label><span>*</span>Time: <input type="time" name="time"></label>
+
+              <label for="howPay"><span>*</span>How to pay: </label>  
+              <select name="howPay" id="howPay" size="1" required>
+                <option value="" selected>-----</option>
+                <option value="credit">Credit card</option>
+                <option value="debit">Debit card</option>
+                <option value="cash">Cash</option>
+              </select>
+
+              <label>Coupon code: <input type="text" name="coupon"></label>  
+          </fieldset>
+        
+          <div class="extraInfo">
+            <label for="comment" class="marginLeft0">Comments to the store: </label><textarea id="comment" name="comment" placeholder="allergies, unavailable hours, etc" cols="75" rows="5"></textarea>  
+          </div>
+
+          <p></p> <!-- to start a new line -->
+
+          <div class="buttonField">            
+            <div class="button"><button>SUBMIT</button></div>
+            <label class="reset">clear all your information<input type="reset"></label>
+          </div>
+        
+        </form>
+      </article>
+     
+      <aside> <!-- Store Information -->
+        <h2>Store Information</h2>
+        <address>
+          <div><p class="orange">Email Us</p><a href="XXXXXXXXXXX@pizza.com">XXXXXXXXXXX@pizza.com</a></div>
+          <div><p class="orange">Call Us</p><a href="tel:+1604XXXXXXX">(604) XXX-XXXX</a></div>
+          <div><p class="orange">Visit Us</p><p id="address">31999 Euclid Street, Barrie, ON Z0Z 9Z9</p></div>
+        </address>
+      </aside>
+
+      <aside class="operaHour"> <!-- Operating Hours -->
+        <h2>Operating Hours</h2>
+        <ul>
+          <li>Monday 5pm – 10pm</li>
+          <li>Tuesday 5pm – 10pm</li>
+          <li>Wednesday closed</li>
+          <li>Thursday 5pm – 10pm</li>
+          <li>Friday 5pm – 10pm</li>
+          <li>Saturday 5pm – 10pm</li>
+          <li>Sunday 5pm – 10pm</li>
+          <li><i>* holiday hours may vary</i></li>
+        </ul>
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p><a href="#">back to the top</a></p> <!-- hyperlink to the top of this website-->
+      <p><small>wrote by Yuriko Uchida on <time datetime="2020-11-06">November 6th, 2020</time></small></p> <!-- my name and the date edited last -->
+    </footer>
+  </body>
+
+</html>

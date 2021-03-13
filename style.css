@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+/* CSS for each elements */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #272729;
+  color: silver;
+  margin: 50px 120px 50px 120px;
+}
+
+header {
+  text-align: center;
+  height: 600px;
+}
+
+header > h1 {
+  margin-bottom: 0;
+  font-size: 55px;
+  text-shadow: 3px 3px 2px black;
+}
+
+header > h2 {
+  margin-top: 8px;
+  text-shadow: 3px 3px 2px black;
+}
+
+form {
+  background-color: white;
+  color: black;
+  padding: 20px 30px 50px 30px;
+  border-radius: 5px;
+}
+
+form label {
+  margin-left: 25px;
+}
+
+fieldset {
+  border-radius: 3px;
+}
+
+input, select, button, textarea {
+  cursor: pointer;
+}
+
+form span {
+  color: red;
+}
+
+aside {
+  margin-top:130px;
+}
+
+aside > h2 {
+  text-align: center;
+}
+
+aside > address {
+  display: flex;
+  justify-content: space-around;
+}
+
+aside > address > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside > address > div > a {
+  color: silver;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+footer {
+  margin-top:130px;
+  text-align: center;
+}
+
+footer > p > a {
+  color: silver;
+  text-decoration: none;
+}
+
+/* CSS for each clas selectors */
+.formTitle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.formTitle > p {
+  text-align: center;
+  padding:10px 0px 20px 0px;
+  margin: 0px;
+}
+
+.formTitle > h2 {
+  text-align: center;
+  padding:10px 0px 20px 0px;
+  margin-bottom: 0px;
+}
+
+.orange {
+  color: #f3aa54;
+}
+
+.marginLeft0 {
+  margin-left: 0px;
+}
+
+.marginWide {
+  margin-top: 33px;
+}
+
+.extraInfo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 33px;
+}
+
+.buttonField {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 80px;
+  height: 25px;
+  font-weight: bold;
+  font-size: 13px;
+  background-color: rgb(240,248,255);
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  background-color: rgba(0, 136, 255, 0.301);
+  color: silver;
+}
+
+.reset {
+  color: rgba(120, 120, 120);
+}
+
+.reset > input {
+  color: rgba(60, 60, 60);
+}
+
+.operaHour {
+  display: flex;
+  flex-direction: column;
+}
+
+.operaHour > ul {
+  align-self: center;
+}
+
+/* CSS for each ID selectors */
+#address {
+  color: silver;
+}
